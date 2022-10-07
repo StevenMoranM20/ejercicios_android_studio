@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="usuario_user">usuario = user</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="password_123">password = 123</string>
+</resources>

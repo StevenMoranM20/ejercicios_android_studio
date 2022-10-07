@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/madera"
+    tools:context=".controller.Login"
+    >
+<!-- LinearLayout GESTOR PRINCIPAL "PARA QUE ES USUARIO TENGA EL CONTROL "-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- INGRESE IMAGEN -->
+<ImageView
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center"
+    android:src="@drawable/madeletras"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESE LAS CREDENCIALES"
+            android:textAlignment="center"
+            android:textColor="@color/colorMarron"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+        <!-- GESTOR QUE CONTIENE LAS CAJAS DE TEXTO o un conjunto de texto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <!-- CAJA DE TEXTO PARA INGRESAR EL EMAIL -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="text"
+                android:background="@color/BotanColor"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/TxtCorreoLogin">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- GESTOR QUE CONTIENE LAS CAJAS DE TEXTO -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+            <!-- CAJA DE TEXTO PARA INGRESAR LA CLAVE -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="text"
+                android:background="@color/BotanColor"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/TxtClaveLogin">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- BOTON LOGIN -->
+        <Button
+            android:id="@+id/BtnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/BotanColor"
+            android:onClick="onClick"
+            android:text="INICIAR SESION"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- BOTON crear cuenta -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="CREAR CUENTA"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/BotanColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/BtnCrearCuentaLogin"
+            android:onClick="onClick"/>
+        <!-- BOTON RECUPERAR CONTRASEÑA -->
+        <TextView
+            android:id="@+id/BtnRecuperarClaveLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="onClick"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

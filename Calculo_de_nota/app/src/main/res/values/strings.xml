@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculo_de_nota</string>
+    <string name="txt_view_promedio">Nota del alumno</string>
+    <string name="txt_Matematicas">Matematicas</string>
+    <string name="txt_Fisica">Fisica</string>
+    <string name="txt_view_Quimica">Quimica</string>
+    <string name="evaluar">Evaluar</string>
+</resources>

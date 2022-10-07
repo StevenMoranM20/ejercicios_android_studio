@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/madera"
+    tools:context=".controller.Login"
+    >
+    <!-- LinearLayout GESTOR PRINCIPAL "PARA QUE ES USUARIO TENGA EL CONTROL "-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- INGRESE IMAGEN -->
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="323dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/madeletras" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:textAlignment="center"
+            android:textColor="@color/colorMarron"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+
+        <!-- BOTON LOGIN -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="INVENTARIO"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/BotanColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/BtnIngresoInventario"
+            android:onClick="onClick"/>
+
+        <!-- BOTON crear cuenta -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="LISTA DE PRODUCTOS"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/BotanColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/BtnIngresoLista"
+            android:onClick="onClick"/>
+
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ejercicio.tds_noct_2022_1_orlasic">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="APP MADELETRAS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tds_noct_2022_1_orlasic"
+        tools:targetApi="31">
+        <activity
+            android:name=".controller.Recuperar"
+            android:exported="false" />
+        <activity
+            android:name=".conexion.AdminSQLiteOpenHelper"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".controller.inventario"
+            android:exported="false" />
+        <activity
+            android:name=".controller.RecuperarC"
+            android:exported="false" />
+        <activity
+            android:name=".controller.UserRegister"
+            android:exported="false"
+            android:parentActivityName=".controller.Login" />
+        <activity
+            android:name=".controller.Home"
+            android:exported="false" />
+        <activity
+            android:name=".controller.Login"
+            android:exported="false" />
+        <activity
+            android:name=".controller.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

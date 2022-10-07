@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.Login"
+    android:background="@color/colorAcentuacion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_orlasic"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESE SUS DATOS PERSONALES"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+        <!--TextInputLayotu: titulo de la app-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombres Completos"
+                android:inputType="text"
+                android:background="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"
+                android:id="@+id/TxtNombreCrearUsuario">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--TextInputLayotu: capturar la clave del usuario-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"
+                android:id="@+id/TxtCorreoCrearUsuario">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--TextInputLayotu: capturar la clave del usuario-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clave"
+                android:inputType="textPassword"
+                android:background="@android:color/white"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"
+                android:id="@+id/TxtClaveCrearUsuario">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Boton: Iniciar sesion-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="CREAR CUENTA"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/BtnCrearUsuario"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</LinearLayout>
